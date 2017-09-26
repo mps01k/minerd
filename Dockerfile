@@ -15,7 +15,8 @@ RUN		apt-get install -qqy libcurl4-openssl-dev
 RUN		apt-get install -qqy git
 RUN		apt-get install -qqy make
 
-RUN		git clone https://github.com/pooler/cpuminer
+#RUN		git clone https://github.com/pooler/cpuminer
+RUN     git clone https://github.com/myccgear/minerd
 
 RUN		cd cpuminer && ./autogen.sh
 RUN		cd cpuminer && ./configure CFLAGS="-O3"
